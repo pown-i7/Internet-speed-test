@@ -1,4 +1,4 @@
-"""Simple Internet speed test script using speedtest-cli."""
+"""khoya ah code swlni 3elih ama README la ghir nsa dkchi krbo ghir AI 3etit lih code oglt lih i9ad liya README code mchi chihaja ghir tyhsb liya sor3a deyl wifi li3ndk fach ghadi thtaj code m3erftch ml9it mydar o ana nktb had code """
 
 import sys
 
@@ -10,6 +10,20 @@ except ImportError:
 
 
 def run_speed_test():
+    """Execute an internet speed test and display results.
+    
+    Performs a speed test by:
+    1. Connecting to the best available Speedtest.net server
+    2. Measuring download speed
+    3. Measuring upload speed
+    4. Recording ping latency
+    
+    Handles network errors gracefully with informative error messages.
+    Results are printed to stdout in a formatted table.
+    
+    Raises:
+        No exceptions are raised; errors are caught and printed instead.
+    """
     try:
         st = speedtest.Speedtest()
     except speedtest.ConfigRetrievalError as exc:
